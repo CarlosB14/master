@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Título navegador y buscador-->
+    <title>HTML</title>
+
+    <!--Descripción de la página buscadores-->
+    <meta name="description" content="HTML">
+
+    <!--Autor-->
+    <meta name="author" content="Carlos Beltrá">
+
+    <!--Favicon de la página-->
+    <link rel="icon" href="nolotengo.ico" type="image/x-icon">
+
+    <!--Codificación-->
+    <meta charset="UTF-8">
+
+    <!--Para poder ver la web en los diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Color para la barra de búsqueda de algunos móvlies-->
+    <meta name="theme-color" content="#345e2f">
+    
+</head>
+
+<ul>
+    <header><a href="index.html"><h2>Inicio</h2></a></header>
+    <ul>
+        <h1>HTML</h1>
+        <section>
+            <details>
+                <summary><strong>Tablas</strong></summary>
+            <ul>
+                <li><strong>Table</strong> --> Engloba todo el contenido de la tabla</li>
+                <li><strong>tr</strong> --> para flias</li>
+                <li><strong>th</strong> --> para celdas de cabecera, negrita y semántica, van dentro de tr</li>
+                <li><strong>td</strong> --> celdas normal que no son de cabecera, va dentro de tr</li>
+                <li><strong>caption</strong> --> Justo debajo de table. Para el título de la tabla, encima o bajo de la tabla</li>
+                <li><strong>border</strong> --> sería table border="1"> Le damos borde a la tabla</li>
+                <li><strong>Atributo colspan</strong> --> Fusionar celdas adyacentes <code>td colspan="2"</code> y no pondríamos el siguiente td</li>
+                <li><strong>Atributo rowspan</strong> --> Fusiona flias igual que las celdas</li> 
+                <li><strong>thead</strong> --> Define donde empieza y acaba la cabecera</li>
+                <li><strong>tbody</strong> --> Engloba el cuerpo de la tabla</li>
+                <li><strong>tfoot</strong> --> Normalmente se define después de thead y antes de tbody</li>
+                </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Instalación y creación de un Favicon</strong></summary>
+                <ul>
+                    <li><strong>Tamaño</strong> --> 512*512 píxeles en figma y guardarlo en png</li>
+                    <li><strong>Crear Favicon</strong> --> <a href="http://favicon-generator.org">favicon-generator.org</a></li>
+                    <li><strong>Descargar y copiar</strong>--> Descargarlo y copiarlo en archivo raiz todas las imágenes, y el código en el head</li>
+                </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Formularios</strong></summary>
+                <ul>
+                    <li><strong>form</strong> --> Envuelve todo el formulario</li>
+                    <ul><li><strong>Atributo action</strong> --> Dirección URL del backend donde se envía la información</li>
+                    <li><strong>Atritubo method</strong>--> Se usará con GET: Sólo form consulta, no modf ni crear registros, sólo 500 bytes no archivos. POST: De forma ocultapara, envío muchos datos, sí archivos, tmb creación eliminación o borrado</li>
+                    <li><strong>Atritubo name</strong>--> Para identificar un formulario</li>
+                    <li><strong>Atritubo target</strong>--> Para abrir en una pestaña nueva con _blank</li>
+                    <li><strong>Atritubo enctype</strong>--> Esencial para cuando se envíe un archivo. Para determinar en que codificación van a viajar los ficheros</li>
+                    <li><strong>Atritubo accept-charset</strong>--> Fuerza a utliizar una codificación en los parámetros del formulario</li>
+                    <li><strong>Atritubo autocomplete</strong>--> On o Off y es para que el navegador pueda usar datos que se han enviado en otros formularios</li>
+                    <li><strong>Atritubo novalidate</strong>--> No lo aconseja es para desacativar la validación del formulario</li>
+
+                        <details>
+                            <summary><strong>Input</strong> --> Elemento donde podremos escribir la información que queremos enviar al servidor, según la naturaleza de los datos usaremos uno o otro</summary>
+                        <ul>
+                            <li><strong>Input</strong>--> type = --> button-Crea botón, checkbox, color, date, datetime-local, emali-obliga a emali, flie-para adjuntar ficheros obligado atributo enctype, hidden-enviar datos al servidor sin ver usuario, image, month, number-sólo numeros, password-sale cifrado, radio, range, reset-borra formulario, search, submit, tel, text-sólo texto, time, url-obliga a url, week</li>
+                            <li><strong>name</strong>--> Es la clave valor, muy importante en todos los inputs le añadimos la clave con la que queremos trabajar nosotros cada interacción del usuario</li>
+                            <li><strong>type="checkbox"</strong>--> Input de cosas que el usuario podrá seleccionar o no, puede elegir las que quiera</li>
+                            <li><strong>type="color"</strong>--> Para que el usuario seleccione un color</li>
+                            <li><strong>type="date"</strong>--> Nos añade input para seleccionar fecha</li>
+                            <li><strong>type="datatime-local"</strong>--> Nos une fecha y hora en un input</li>
+                            <li><strong>type="image"</strong>--> Para usar una imagen de envío, cómo una imagen con vínculo pero para enviar la petición del formulario</li>
+                            <li><strong>type="month"</strong>--> Input de mes</li>
+                            <li><strong>type="radio" value="hombre"</strong>--> Input de por ejemplo elige sexo, sólo puede elegir uno. Importante mismo name para que si eliges uno o otro deseleccione el anterior</li>
+                            <li><strong>type="range" min="0" max="10"</strong>-->Input de un rango del 0 al 10</li>
+                            <li><strong>reset</strong>--> </li>
+                            <li><strong>type="search"</strong>--> En la caslila de búsqueda añade una x para eliminar el contenido escrito</li>
+                            <li><strong>type="tel"</strong>--> Input de teléfono</li>
+                            <li><strong>type="time"</strong>--> Input para seleccionar una hora</li>
+                            <li><strong>type="week"</strong>--> Input de semana</li>
+                            <li><strong>id=""</strong>--> No pueden haber dos iguales en el documento, le estamos dando una identidad</li>
+                            <li><strong>placeholder</strong>--> Sale en el recuadro del input un texto nuestro indicando cualquier cosa, en cuanto escriba desaparece</li>
+                            <li><strong>required</strong>--> Se puede usar en todos los inputs, y es para obligar al usuario a rellenarlo para enviar</li>
+                        </ul>
+                        </details>
+                    </li>
+                    <li><strong>label for="id"</strong>--> Hace que el texto que envuelve label tenga accesibliidad con, por ejemplo, el radio, y al pulsar el texto tmb seleccione la caslila</li>
+                    <li><strong>textarea cols="" rows=""</strong>--> Crea zona para escribir texto de x columnas y x flias</li>
+
+                        <details>
+                            <summary><strong>select name="" id=""</strong>--> Para hacer desplegable de varias opciones por ejemplo tallas</summary>
+                        <ul>
+                        <li><strong>option value="" required</strong>--> Empezar el option con value vacío. Rodeamos el texto con option de lo que queremos que aparezca en el desplegable</li>
+                        <li><strong>select multiple</strong>--> Te salen todas las opciones para seleccionar una de ellas en el desplegable</li>
+                        </ul>
+                        </details>
+                    <li><strong>fieldset</strong>--> Engloba en una caja diferentes campos de un formulario para poder organizarlos</li>
+                    <li><strong>legend</strong>--> En fieldset le damos definición a ese grupo de inputs del formulario</li>
+                </ul>
+            </ul>
+        </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Imágenes en web</strong></summary>
+                <ul>
+                    <li><strong>Imágenes contenido</strong>--> Las implantaremos con html</li>
+                    <li><strong>Imágenes presentación o decoración</strong>--> Las implantaremos con CSS</li>
+
+                        <details>
+                            <summary><strong>img</strong>--> Etiqueta vacía para imáegenes, se complementa todo con atributos</summary>
+                        <ul>
+                            <li><strong>src</strong>--> Es la url donde está la imagen que vamos a mostrar, obligado</li>
+                            <li><strong>alt</strong>--> Texto alternativo explicando la imagen para navegadores que no la puedan mostrar. Obligado tmb</li>
+                            <li><strong>with</strong>--> Ancho de la imagen</li>
+                            <li><strong>height</strong>--> Alto de la imagen</li>
+                            <li><strong>loading</strong>--> Tiene como opción por defecto <strong>eager</strong>eager, descarga todas las imágenes. <strong>Lazy</strong>Lazy el navegador pospone la descarga hasta que es visible.</li>
+                            <li><strong>figure</strong>--> Agrupación de imágenes, pones la imagen dentro</li>
+                            <li><strong>figcaption</strong>--> Es la leyenda de figure, le da semántica</li>
+                            <li><strong>srcset</strong>--> Le damos al navegador las imágenes en diferente ancho o densidad de píxeles para que carge una o otra en relación donde se está visualizando</li>
+                            <li><strong>sizes</strong>--> </li>
+                            <li><strong>picture</strong>--> Agrupa serie de imágenes</li>
+                            <li><strong>source</strong>--> Mostrará la imagen que cumpla una serie de criterios</li>
+                            <li><strong>source media="(with < 100px)"</strong>--> Podemos hacer condicionales para que muestre una imagen o otra</li>
+                        </ul>
+                    </details>
+                </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Etiquetas multimedia</strong></summary>
+            <ul>
+                <li><strong>embed</strong>--> Hay mejores opciones para usar ahora. Atributos, src, type width y height</li>
+
+                    <details>
+                        <summary><strong>iframe</strong>--> Para incrustar contenido de otra web o de nuestra propia web</summary>
+                    <ul>
+                        <li><strong>src</strong>--> Es la url</li>
+                        <li><strong>srcdoc</strong>No se usa casi, para cargar código en vez de documento html</li>
+                        <li><strong>sandbox</strong></li>
+                        <li><strong>allow</strong>--> Es para darle opciones al vídeo, como aumentar velocidad, tamaño mediano de vídeo etc.</li>
+                        <li><strong>alowfullscreen</strong>--> Para poder activar el full screen</li>
+                        <li><strong>width y height</strong>--> Ancho y alto</li>
+                        <li><strong>loading</strong>--> Lazy para que no cargue hasta que no lleguemos a esa parte</li>
+                        <li><strong>frameborder="0"</strong>--> Para quitar el borde 0 sin CSS</li>
+                        <li><strong>name</strong>--> hacemos un href con tarjet en el name del iframe para poder cargar en la ventanita que creamos diferentes urls en ese espacio que hemos asignado</li>
+                    </ul>
+                    </details>
+
+                    <details>
+                        <summary><strong>video</strong>--> Para insertar vídeos locales lo mejor formato MP4</summary>
+                    <ul>
+                        <li><strong>src</strong>--> Url del vídeo</li>
+                        <li><strong>width y height</strong>--> Ancho y alto del vídeo</li>
+                        <li><strong>autoplay</strong>--> Reproduce el vídeo automáticamente, ya no se puede casi nunca</li>
+                        <li><strong>loop</strong>--> Para que sea en bucle</li>
+                        <li><strong>muted</strong>--> Le damos opción a mutear</li>
+                        <li><strong>controls</strong>--> Controles de reproducción</li>
+                        <li><strong>playsinline</strong>--> Reproduce el vídeo en linea, en su área de reproducción</li>  
+                        <li><strong>poster</strong>--> Muestra imagen a modo presentación</li>
+                        <li><strong>preload</strong>--> Precarga del vídeo</li>
+                        <li><strong>source</strong>--> Como en imágenes</li>
+                    </ul>
+                    </details>
+                <li><strong>audio</strong>--> Para insertar audio MP3, añadimos atributo <strong>controls</strong> para que salgan los controles del MP3</li>
+                <li><strong>canvas</strong>--> Para tener un lienzo donde dibujar</li>
+                <li><strong>map</strong>--> Una imagen partida en diferentes secciones y nos lleva a sitios diferentes por coordenadas</li>
+            </ul>
+            </details>
+        </section>
+            <h2><ul><strong>BONUS windows resizer--> extensión</strong></h2>--> Para hacer ver tamaño de la web que estamos y darle px exactos. Para visualizar y probar
+            <h2><ul><a href="https://picsum.photos/"><strong>BONUS Picsum Photos</strong></a></h2>--> Para generar fotos aleatorias con el ancho y alto que queramos
+            <h2><ul><a href="https://www.loremipzum.com/es/generador-de-texto"><strong>BONUS Generador de textos dummys</strong></a></h2>--> Para generar textos aleatorios
+            <h2><ul><strong>Etiquetas interactivas</strong></h2>
+                <li><strong>Atributo hidden</strong>--> Ocultar un section, un hx, y tmb oculta semántica</li>
+                <li><strong>details</strong>--> Para hacer desplegable, con el atributo open directamente aparece abierto</li>
+                <li><strong>summary</strong>--> Para darle texto al desplegable</li>
+                <li><strong>dialog</strong>--> Para mostrar una ventana con información, con el atributo open directamente ya se vería
+                    <ul>
+                        <li><strong>close</strong>--> button onclick="document.getElementById('id del dialog a cerrar').close()"> --> Nos crea botón para cerrar el dialog</li>
+                        <li><strong>open</strong>--> button onclick="document.getElementById('id del dialog a cerrar').open = True">, hay que ponerle Id a dialog!</li>
+                    </ul>
+                </li>
+                <li><strong>popover</strong>--> Ventana que sólo puedes interactuar con ella, no puedes hacer nada más</li>
+                    <ul>
+                        <li><strong>popover</strong>--> Lo colocamos como atributo en un div, p, section etc y le añadimos id tmb</li>
+                        <li><strong>crear botón</strong>--> Creamos botón para activarlo button popovertarget="id-creado" popovertargetaction="toggle">Cambiar estado del popover cierrobutton</li>
+                    </ul>
+                <li><strong>datalist</strong>--> Lo creamos con Id 
+                    <ul>
+                        <li><strong>input</strong>--> type="texto" list="id-de-datalist"</li>
+                        <li><strong>option</strong>--> Las opciones que queramos en el desplegable</li>
+                    </ul>
+                </li>
+                <li><strong>Select2</strong>--> Importar en nuestro head-->   script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+                    link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+                    script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js">
+                    falta abrirlo y cerrarlo para poder ver el texto</li>
+                <li><strong>Uso select</strong>--> select id="" y ponemos los option como en details</li>
+                <li><strong>Añadir script para select</strong>--> Falta añadir la etiqueta script
+                    $(document).ready(function () {
+                      $('#id-select').select2();
+                    });
+                  </li>
+                <li><strong>wysiwyg</strong>--> Usaremos el Ckeditor, y es para convertir un textarea en un editor con todas las opciones. Metemos el script en head y al final del texto <br>
+                    script para head --> script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">/script>
+                    script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js">/script> <br>
+                    script para body   script>
+                        ClassicEditor
+                          .create(document.querySelector('#description'))
+                          .catch(error => {
+                            console.error(error);
+                          });
+                      /script>
+                </li>
+            </ul>
+            </section>
+    </main>
+</body>
+
+

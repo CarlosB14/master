@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Título navegador y buscador-->
+    <title>Git y Github</title>
+
+    <!--Descripción de la página buscadores-->
+    <meta name="description" content="Git y Github">
+
+    <!--Autor-->
+    <meta name="author" content="Carlos Beltrá">
+
+    <!--Favicon de la página-->
+    <link rel="icon" href="nolotengo.ico" type="image/x-icon">
+
+    <!--Codificación-->
+    <meta charset="UTF-8">
+
+    <!--Para poder ver la web en los diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Color para la barra de búsqueda de algunos móviles-->
+    <meta name="theme-color" content="#345e2f">
+    
+</head>
+
+<body>
+    <header><a href="index.html"><h1>Inicio</h1></a></header>
+    <main>
+        <h1>Git y Github</h1>
+        <h2><ul><strong>Git bash</strong></h2>
+                <li><strong>git init</strong>--> En la carpeta que estamos iniciamos git</li>
+                <li><strong>git status</strong>--> Vemos que está pasando</li>
+                <li><strong>git add .</strong>--> Añadimos todos los archivos modificados o creados a git</li>
+                <li><strong>git commit -m "message"</strong>--> Guardamos las modificaciones o creaciones con un mensaje para saber cambios hechos</li>
+                <li><strong>git log</strong>--> Nos muestra los pantallazos hechos</li>
+                <li><strong>git checkout hash</strong>--> Nos movemos al hash indicado</li>
+                <li><strong>git log --graph --decorate --all</strong>--> Muestra log en una línea simple</li>
+                <li><strong>git reset</strong>--> No te deja hacerlo si tienes archivos sin guardar</li>
+                <li><strong>git config --global alias.tree "comando"</strong>--> Macro con nombre tree del comando registrado</li>
+                <li><strong>git ignore</strong>--> Ignorar archivo en status o carpeta</li>
+                <li><strong>git reset --hard --hash</strong>--> Elimita lo de después de este hash</li>
+                <li><strong>git reflog</strong>--> Muestra todos los hash y movimientos</li>
+                <li><strong>git reset --hard último-hash</strong>--> Nos sitúa en el último hash aún eliminándolo</li>
+                <li><strong>git tag</strong>--> Para marcar un pantallazo con más énfasis</li>
+                <li><strong>git checkout tags/nombre-tag</strong>--> Nos lleva a ese tag</li>
+                <li><strong>git tag</strong>--> Nos dice los tags creados</li>
+                <li><strong>git branch nombre</strong>--> Crear una rama desde donde estamos</li>
+                <li><strong>git switch rama</strong>--> Nos movemos a otra rama</li>
+                <li><strong>git merge rama</strong>--> Nos une la información desde la rama donde estamos a la que hacemos el merge normalmente master/main</li>
+                <li><strong>git slash</strong>--> Congela lo que hacemos y nos permite cambiar de rama sin hacer commit</li>
+                <li><strong>git slash list</strong>--> Nos muestra los slash abiertos</li>
+                <li><strong>git slash pop</strong>--> Vuelves al slash como estaba</li>
+                <li><strong>git slash drop</strong>--> Elimina el slash</li>
+                <li><strong>git diff rama</strong>--> Te dice si hay cosas nuevas en esa rama o cambios</li>
+                <li><strong>git branch -d rama</strong>--> Eliminamos rama, si hemos hecho merge con main, no pasa nada porque ya tenemos esos cambios mergeados en el main</li>
+                <li><strong>git branch -m main</strong>--> Nos cambia de nombre la rama por uno que queramos, master por main</li>
+            </ul>
+        <h2><ul><strong>Github con git bash</strong></h2>
+                <li><strong>git remote add origin git@github.com:CarlosB14/repositorio.git</strong>--> Nos vincula git con github</li>
+                <li><strong>git push -u origin master/main</strong>--> Para subir archivos por primera vez, luego sólo git push</li>
+                <li><strong>git fetch</strong>--> Descarga historial de cambios y lo podemos ver en git tree</li>
+                <li><strong>git pull origin master/main</strong>--> Hará merge por defecto</li>
+                <li><strong>git clone "url ssh de github del repositorio a clonar"</strong>--> Clonamos repositorio mediante ssh</li>
+            </ul>
+    </main>
+</body>
