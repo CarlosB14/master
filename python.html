@@ -36,9 +36,12 @@
                 <li><strong>parámetro definido vacío</strong>--> edad = "" cuando entramos en la función podemos poner condicional de if edad==True: persona['edad'] = edad y añadimos al diccionario la clave valor edad</li>
                 <li><strong>parámetro * antes</strong>--> Se usa cuando no sabemos cuantos parámetros dentro de la tupla que crea python para ello, pueden meter cualquier cantidad de parámetros.</li>
                 <li><strong>parámetro ** antes</strong>--> Se usa para crear clave valor (diccionario), sin saber cuantos necesitaremos</li>
-                <li><strong></strong>--> </li>
-                <li><strong></strong>--> </li>
-                <li><strong></strong>--></li>
-                <li><strong></strong>--></li>
+                <li><strong>Recursividad</strong>--> Fibonnaci ej: def recursividad(num):  if num==1 return num  else:  retur recursividad (num-1)</li>
+                <li><strong>Memoización explicita</strong>--> Almacena los resultados de una función para usarlo más veces, con dict ej: fibonacci_cache = {}  def fib(indice):  if indice in fibonacci_cache:  return(fibonacci_cache[indice])  if indice <=1:  valor = indice  else:  valor = fib(indice-1) + fib(indice-2)  fibonacci_cache[indice] = valor  return(valor)</li>
+                <li><strong>Memoización implícita</strong>--> Ya creado biblio para esto ej: from functools import lru_cache  @lru_cache(maxsize = 20)  def fib_cache(indice):  if indice <=1:  return indice  else:  return fib(indice-1) + fib(indice-2)</li>
+                <li><strong>Funciones lambda</strong>--> Para funciones muy simples, cortas Ej: area=lambda base,altura:(base*altura/2) donde area es nombre función, base y altura parámetros a meter, los : el return y por último ecuación</li>
+                <li><strong>Funciones lambda</strong>--> No puede contener ni condicionales ni bucles, para hacer cálculos, formateos de texto, filtros</li>
+                <li><strong>Funciones decoradoras</strong>--> Se componen de 3 funciones, función A recibé como parámetro función B y devuelve función C</li>
+                <li><strong>Funciones lambda</strong>--> </li>
                 </ul>
         </section>
