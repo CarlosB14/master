@@ -45,3 +45,28 @@
                 <li><strong>Funciones lambda</strong>--> </li>
                 </ul>
         </section>
+        <section>
+            <details>
+                <summary><strong>Manipulación archivos</strong></summary>
+            <ul>
+                <li><strong>Leer archivo</strong>--> with open('archio.txt') as archivo.objeto:  contenido = archivo_objeto.read() --> Guarda la lectura del arvhico en contenido</li>
+                <li><strong>Leer archivo por línea</strong>--> for linea in archivo_objeto:  print(linea)</li>
+                <li><strong>Escribir en arvhico</strong>--> filename = 'programa.txt'  with oepn('filename, "w") as archivo_objeto:  archivo_objeto.write("Estoy aprendiendo python")</li>
+                <li><strong>Modos open</strong></li>
+                <details>
+                    <summary><strong>Modos open</strong></summary>
+                    <ul>
+                        <il><strong>Modo r</strong>--> Modo lectura, si ponemos r+ el puntero se coloca al principio del archivo</il>
+                        <il><strong>Modo w</strong></il>--> Modo escritura y sobreescribe si había algo, si ponemos w+ el archivo se sobreescribe
+                        <il><strong>Modo a</strong>--> Modo escritura y anexa al final, si ponemos a+ el puntero se coloca al final del archivo</il>
+                        <il><strong>Modo x</strong>--> Modo crear archivo y escribe dentro, falla si ya existe el archivo</il>
+                        <il><strong>Modo b</strong>--> Modo binario. se utiliza con rb para lectura binaria y wb para escritura binaria</il>
+                        <li><strong>Modo t</strong>--> Modo texto predeterminado, se utiliza junto a rt o wt para leer o escribir en texto</li>
+                    </ul>
+                </details>
+                <li>Modo abreviado<strong>f = open(nombre_archivo, 'w+')  f.write(contendio en forma de string)</strong></li>
+                <li><strong>Con librería numpy lectura</strong>--> data = np.genfromtxt('datos.csv', delimiter=',',) se puede trabajar de muchas forma los datos</li>
+                <li><strong>Numpy escritura</strong>--> np.savetxt('datos.csv', data, delimiter=',')</li>
+                <li><strong>Archivo json</strong>import json   with open(filename, 'w') as f_obj:  json.dump(numeros, f_obj)  para leer json.load(f_obj)</li>
+                <li><strong></strong></li>
+                <li><strong></strong></li>
