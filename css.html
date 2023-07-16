@@ -32,57 +32,81 @@
         <section>
             <details>
                 <summary><strong>Componentes CSS</strong></summary>
-            <ul>
-                <li><strong>Selector</strong>--> Elemento o elementos que seleccionamos para darle estilo ej: selector { propiedad:valor;  propiedad:valor; etc...} ej código: p {  color:red;}</li>
-                <li><strong>Propiedad</strong>--> Qué es lo que quiero modificar</li>
-                <li><strong>Valor</strong>--> Definimos el valor al que cambiamos</li>
-                <li><strong>Comentario</strong>--> /**/ todo lo que esté dentro de los asteriskos es comentario</li>
-                <li><strong>Regla</strong>--> Par de propiedad valor</li>
-            </ul>
+                    <ul>
+                        <li><strong>Selector</strong>--> Elemento o elementos que seleccionamos para darle estilo ej: selector { propiedad:valor;  propiedad:valor; etc...} ej código: p {  color:red;}</li>
+                        <li><strong>Propiedad</strong>--> Qué es lo que quiero modificar</li>
+                        <li><strong>Valor</strong>--> Definimos el valor al que cambiamos</li>
+                        <li><strong>Comentario</strong>--> /**/ todo lo que esté dentro de los asteriskos es comentario</li>
+                        <li><strong>Regla</strong>--> Par de propiedad valor</li>
+                    </ul>
             </details>
             <details>
                 <summary><strong>Incluir CSS</strong></summary>
-            <ul>
-                <li><strong>Arcivo CSS externo</strong>--> El código se escribe en un archivo .css aparte. La mejor forma.</li>
-                <li><strong>Bloque de estilos</strong>--> El código se escribe en una etiqueta style en documento html</li>
-                <li><strong>Estilos de línea</strong>--> El código se escribe en un atributo html style en una etiqueta</li>  
-            </ul>
+                    <ul>
+                        <li><strong>Arcivo CSS externo</strong>--> El código se escribe en un archivo .css aparte. La mejor forma.</li>
+                        <li><strong>Bloque de estilos</strong>--> El código se escribe en una etiqueta style en documento html</li>
+                        <li><strong>Estilos de línea</strong>--> El código se escribe en un atributo html style en una etiqueta</li>  
+                    </ul>
             </details>             
         </section>
         <section>
             <details>
                 <summary><strong>Unidades de medida</strong></summary>
-            <ul>
-                <details>
-                    <summary><strong>Unidades absolutas</strong>--> Principal px, poco flexibles pero fácil de usar sin cálculos intermedios. Y usar pt para impresión.</summary>
-                <ul>
-                    <li><strong>with</strong>--> Ancho</li>
-                    <li><strong>font-size</strong>--> </li>
-                </ul>
-                </details>
+                    <ul>
+                        <details>
+                            <summary><strong>Unidades absolutas</strong>--> Principal px, poco flexibles pero fácil de usar sin cálculos intermedios. Y usar pt para impresión.</summary>
+                                <ul>
+                                    <li><strong>with</strong>--> Ancho</li>
+                                    <li><strong>font-size</strong>--> </li>
+                                </ul>
+                        </details>
                 <details>
                     <summary><strong>Unidades relativas</strong></summary>
-                <ul>
-                    <li><strong>%</strong>--> Su tamaño relativo a su elemento padre</li>
-                    <li><strong>em</strong>--> Relativo al font-size de su elemento padre, se multiplica por los px de su elemento padre</li>
-                    <li><strong>rem</strong>--> Relativo al elemento font-size principal</li>
-                <details>
-                    <summary><strong>viewport</strong>Relativo al tamaño del navegador</summary>
-                <ul>   
-                    <li><strong>vw</strong>--> Ancho del viewport 50vw es 50% del navegador</li>
-                    <li><strong>vh</strong>--> Alto del viewport</li>
-                    <li><strong>vmin</strong>--> Para hacer elementos cuadrados</li>
-                    <li><strong>vmax</strong>--> Para hacer elementos cuadrados</li>
-                </ul>
+                        <ul>
+                            <li><strong>%</strong>--> Su tamaño relativo a su elemento padre</li>
+                            <li><strong>em</strong>--> Relativo al font-size de su elemento padre, se multiplica por los px de su elemento padre</li>
+                            <li><strong>rem</strong>--> Relativo al elemento font-size principal</li>
+                                <details>
+                                    <summary><strong>viewport</strong>--> Relativo al tamaño del navegador</summary>
+                                        <ul>   
+                                            <li><strong>vw</strong>--> Ancho del viewport 50vw es 50% del navegador</li>
+                                            <li><strong>vh</strong>--> Alto del viewport</li>
+                                            <li><strong>vmin</strong>--> Para hacer elementos cuadrados</li>
+                                            <li><strong>vmax</strong>--> Para hacer elementos cuadrados</li>
+                                        </ul>
+                                </details>
+                        </ul>
                 </details>
                 <details>
                     <summary><strong>Colores CSS</strong></summary>
-                <ul>
-                    <li><strong>color</strong>--> Cambia color de texto que está en el interior de un elemento</li>
-                    <li><strong>background-color</strong>--> Cambia el color de fondo de un elemento</li>
-                    <li><strong>Lista colores-- red</strong>Falta url y eliges el nombre del color</li>
-                    <li><strong>RGB</strong>--> (0,0,0) rojo azul y verde</li>
-                    <li><strong>hexadecimal</strong>--> #rrggbb   </li>
+                        <ul>
+                            <li><strong>color</strong>--> Cambia color de texto que está en el interior de un elemento</li>
+                            <li><strong>background-color</strong>--> Cambia el color de fondo de un elemento</li>
+                            <li><strong>Lista colores-- red</strong>Falta url y eliges el nombre del color</li>
+                            <li><strong>RGB</strong>--> (0,0,0) rojo azul y verde</li>
+                            <li><strong>hexadecimal</strong>--> #rrggbb   </li>
+                        </ul>
+                </details>
+            </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Tipos de etiquetas y CSS del navegador</strong></summary>
+                    <ul>
+                        <li><strong>Etiquetas de bloque</strong>--> Van a ocupar el máximo que tenga de ancho el navegador</li>
+                        <li><strong>Etiquetas de línea</strong>--> Sólo ocupan su contenido</li>
+                        <li><strong>Normalize.css</strong>--> Para dar un valor a los estilos CSS de nuestra web igual en todos los dispositivos</li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                    </ul>
+            </details>
+        </section>
     </main>
 
 </body>
