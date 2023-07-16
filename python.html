@@ -57,7 +57,7 @@
                     <summary><strong>Modos open</strong></summary>
                     <ul>
                         <il><strong>Modo r</strong>--> Modo lectura, si ponemos r+ el puntero se coloca al principio del archivo</il>
-                        <il><strong>Modo w</strong></il>--> Modo escritura y sobreescribe si había algo, si ponemos w+ el archivo se sobreescribe
+                        <il><strong>Modo w</strong>--> Modo escritura y sobreescribe si había algo, si ponemos w+ el archivo se sobreescribe
                         <il><strong>Modo a</strong>--> Modo escritura y anexa al final, si ponemos a+ el puntero se coloca al final del archivo</il>
                         <il><strong>Modo x</strong>--> Modo crear archivo y escribe dentro, falla si ya existe el archivo</il>
                         <il><strong>Modo b</strong>--> Modo binario. se utiliza con rb para lectura binaria y wb para escritura binaria</il>
@@ -68,5 +68,17 @@
                 <li><strong>Con librería numpy lectura</strong>--> data = np.genfromtxt('datos.csv', delimiter=',',) se puede trabajar de muchas forma los datos</li>
                 <li><strong>Numpy escritura</strong>--> np.savetxt('datos.csv', data, delimiter=',')</li>
                 <li><strong>Archivo json</strong>import json   with open(filename, 'w') as f_obj:  json.dump(numeros, f_obj)  para leer json.load(f_obj)</li>
-                <li><strong></strong></li>
-                <li><strong></strong></li>
+            </ul>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Manipulación excepciones --> Errores</strong></summary>
+            <ul>
+                <li><strong>try:  except nombre_excepción</strong>--> Para definir mensajes en errores, al final podemos usar else para que si no hay error nos saque el resultado. Si usamos el except nombre_excepción  pass, es un except silencioso no crashea el código y sigue</li>
+                <li><strong>Saber que errores reportar</strong>--> Los input de usuario, existencias de un archivo, disponibilidad de conexión red</li>
+                <li><strong></strong>--> </li>
+                <li><strong></strong>--> </li>
+                <li><strong></strong>--> </li>
+                <li><strong></strong>--> </li>
+                <li><strong></strong>--> </li>
+                <li><strong></strong>--> </li>        
