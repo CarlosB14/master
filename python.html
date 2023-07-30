@@ -72,13 +72,24 @@
         </section>
         <section>
             <details>
-                <summary><strong>Manipulación excepciones --> Errores</strong></summary>
-            <ul>
-                <li><strong>try:  except nombre_excepción</strong>--> Para definir mensajes en errores, al final podemos usar else para que si no hay error nos saque el resultado. Si usamos el except nombre_excepción  pass, es un except silencioso no crashea el código y sigue</li>
-                <li><strong>Saber que errores reportar</strong>--> Los input de usuario, existencias de un archivo, disponibilidad de conexión red</li>
-                <li><strong></strong>--> </li>
-                <li><strong></strong>--> </li>
-                <li><strong></strong>--> </li>
-                <li><strong></strong>--> </li>
-                <li><strong></strong>--> </li>
-                <li><strong></strong>--> </li>        
+                    <summary><strong>Manipulación excepciones --> Errores</strong></summary>
+                <ul>
+                    <li><strong>try:  except nombre_excepción</strong>--> Para definir mensajes en errores, al final podemos usar else para que si no hay error nos saque el resultado. Si usamos el except nombre_excepción  pass, es un except silencioso no crashea el código y sigue</li>
+                    <li><strong>Saber que errores reportar</strong>--> Los input de usuario, existencias de un archivo, disponibilidad de conexión red</li>
+                </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Objetos y clases</strong></summary>
+                    <ul>
+                        <li><strong>Definir clase</strong>--> class Fruta:  def __init__(self):  self.nombre = 'manzana'  self.color= 'roja'</li>
+                        <li><strong>La aplicamos a variable e imprimos atributos</strong>--> mi_fruta = Fruta()  print= mi_fruta.nombre  print = mi_fruta.color</li>
+                        <li><strong>Reasignamos valores</strong>--> mi_fruta.nombre = 'pera'  mi_fruta.color = 'verde'</li>
+                        <li><strong>Asignar atributos como en funciones</strong>--> class Fruta:  def __init__(self, nombre, color):  self.nombre = nombre  self.color=color  Cuando le pongamos variable damos el nombre y color</li>
+                        <li><strong>Métodos</strong>--> def details(self):  print('mi ' + self.nombre) --> Sería un método  la llamaríamos como manzana = Fruta('manzana', 'roja')  manzana.details()</li>
+                        <li><strong>Errores</strong>--> No usar self para un atributo. las otras funciones dentro de la clase no la verían</li>
+                        <li><strong>Método __init__</strong>--> Inicia los atributos sin hacer llamada de él. Tiene el nombre reservado</li>
+                    </ul>
+            </details>
+        </section>        
