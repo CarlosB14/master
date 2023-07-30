@@ -36,14 +36,45 @@
                         <li><strong>Crear contrato</strong>--> contract nombre{ código contrato }</li>
                         <li><strong>Constructor</strong>--> Inicializar las variables, no siempre es necesario --> constructor () {    }</li>
                         <li><strong>Herencia</strong>--> Para heredar funciones de otros contratos. --> contract nombre_contrato is nombre_contrato_heredado{     }</li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
                     </ul>
             </details>
         </section>
+        <section>
+            <details>
+                <summary><strong>Tipos de variables sencillas</strong>--> se definen las variables antes</summary>
+                    <ul>
+                        <li><strong>uint nombre_variable</strong>--> Para definir entero sin signo, le damos tamaño en bits uint8, uint32, uint256, sin definir coge 256</li>
+                        <li><strong>int</strong>--> Para definir entero con signo, le damos tamaño a variable en bits igual que uint, sin definir coge 256</li>
+                        <li><strong>string nombre variable</strong>--> Para variable texto</li>
+                        <li><strong>bool nombre variable</strong>--> True o False</li>
+                        <li><strong>direcciones de eth</strong>--> Valor de 20 bytes, address nombre_variable;</li>
+                        <li><strong>bytes</strong>--> bytes1,4,32 o 256 nombre variable. </li>
+                        <li><strong>Enums</strong>--> enum tipo_nuevo(nombre1, nombre2, nombre3)   tipo_nuevo nombre variable;</li>
+                        <li><strong>atributo public</strong>>--> Lo asignamos a una variable para que podamos interactuar con ello como si fuera una función</li>
+                        <li><strong>atributo owner en address</strong>>--> address public owner = msg.sender;  --> Devuelve la dirección que está interactuando con el contrato</li>
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Estructura de datos compleja</strong>--> Para crear tipo de datos personalizados, se define con nombre y luego propiedades</summary>
+                    <ul>
+                        <li><strong>struct nombre</strong>>--> Le definimos propiedades, como las clases de python</li>
+                        <li><strong>arrays</strong>>--> Colecciones de elementos de mismo tipo uint32 nombre_array[podemos definir tamaño]</li>
+                        <li><strong>Mappings</strong>>--> Actúan como tablas de hash. mapping(keyType => valueType) nombre_variable; (¿Se parecen a los diccionarios?)</li>        
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Funciones</strong>--> Para crear tipo de datos personalizados, se define con nombre y luego propiedades</summary>
+                    <ul>
+                        <li><strong>Sintaxis sin retorno</strong>--> function nombre(dataType parametro1, dataType parametro2) modificadores{código}</li>
+                        <li><strong>Sintaxis con retorno</strong>--> function nombre(dataType parametro1, dataType parametro2) modificadores returns (dataType return_value) {código}</li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
 </body>

@@ -97,7 +97,49 @@
                         <li><strong>Etiquetas de bloque</strong>--> Van a ocupar el máximo que tenga de ancho el navegador</li>
                         <li><strong>Etiquetas de línea</strong>--> Sólo ocupan su contenido</li>
                         <li><strong>Normalize.css</strong>--> Para dar un valor a los estilos CSS de nuestra web igual en todos los dispositivos</li>
-                        <li><strong></strong>--> </li>
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Hojas de estilo en cascada</strong></summary>
+                    <ul>
+                        <li><strong>Cascada</strong>--> Algoritmo o reglas que cumple el navegador para aplicar CSS</li>
+                        <li><strong>Orden aparición</strong>--> 1--> Atributo style en etiqueta HTML.  2--> bloque de estilos en documento HTML.   3 --> archivo .css externo</li>
+                        <li><strong>Herencia</strong>--> Si se establece en un elemento padre todos los hijos heredan ese estilo. </li>
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Selectores</strong></summary>
+                    <ul>
+                        <li><strong>Selector universal --> *</strong>--> Selecciona todos los elementos de la página</li>
+                        <li><strong>Selector de etiqueta</strong>--> Selecciona todos los elementos de la misma etiqueta</li>
+                        <li><strong>Selector clase</strong>--> Lo definimos como atributo a una etiqueta de elemento para diferenciarlo del resto y poder asignarle diferentes valores en CSS se define como .destacado {}, .destacado.grande{} puedes poner que cuando tenga esas dos clases añadirle algo más</li>
+                        <li><strong>Selector ID</strong>--> Identifica  únicamente a un elemento, se define en CSS #destacado{}</li>
+                        <li><strong>Selector mixto</strong>--> Podemos combinar las selecciones --> p.destacado {} me sacará los párrafos que tengan la clase destacado</li>
+                        <li><strong>Seleccionar atributos básicos</strong>--> etiqueta[atributo] --> Sacará todas las etiquetas que tengan ese atributo </li>
+                        <li><strong>Selector de atributos avanzados</strong>--> Se puede complicar todo lo que queramos, úclase selectores 1 en los últmos min salen los que existen</li>
+                        <li><strong>Selector descendente</strong>--> Seleccionar elementos unos dentro de otro, con cuidado, a b, separamos el elemanto a del b con un espacio. 'div#page div' --> Seleccionamos los div que sean descendientes de, los div que tengan id page</li>
+                        <li><strong>Selector de hijo</strong>--> Descendiente de sólo 1 nivel, #page > div, para hacer sólo hijos directos, muy útil para no aplicarlo en todo.</li>
+                        <li><strong>Selector de hermanos</strong>--> Del mismo padre, por ejemplo: --> li ~ li, elegirá los li que tengan un hermano li, al primero no le aplicará el efecto sólo a los siguientes.</li>
+                        <li><strong>Selector de hermano adyacente</strong>--> Etiqueta hermana pero sólo a continuación del elemento especificado, 'a + b'</li>
+                        <li><strong>Selector múltiple</strong>--> Se separa con , podemos aplicarlo a todo lo que queramos, al poner la , es como decir y añadiendo el siguiente</li>
+                        <li><strong>Pseudoclases de hijos</strong>--> strong:first-child, strong:last-child, elige primer hijo o último hijo. li:nth-child(3) elige el tercer li. li:nth-last-child(2) elige el penúltimo  li:nth-child(2n) cada dos elementos, si es (3) elegirá cada 3. (2n + 1) Coge los impares. (odd) coge impares, (even) coge los pares</li>
+                        <li><strong>Pseudoclases de hijos según tipo elemento</strong>--> :first-of-type, .container div:first-of-type --> primer elemento div de la clase container aunque no sea el primer hijo. Se aplica todo lo demás con child</li>
+                        <li><strong>:only-child, :only-of-type</strong>--> Cuando son hijos únicos.  *:empty cualquier elemento que no tenga hijos o contenido. Por ejemplo una imagen</li>
+                            <details>
+                                <summary><strong>Pseudoclases de interacción</strong></summary>
+                                    <ul>
+                                        <li><strong>:hover</strong>--> Cuando pasas el ratón por encima</li>
+                                        <li><strong>:active</strong>--> Cuando cualquier usuario pincha el elemento, pero se activa justo cuando está pinchando</li>
+                                        <li><strong>:focus</strong>--> El elemento que hemos pinchado por última vez</li>
+                                        <li><strong>:focus-within</strong>--> Si uno de sus elementos hijos tiene el focus</li>
+                                        <li><strong>:focus-visible</strong>--> Cuando tiene el focus de forma visible</li>
+                                    </ul>
+                            </details>
+                        <li><strong>Pseudoselectores de ubicación</strong>--> :link --> Enlaces sin visitar :visited--> enlaces visitados</li>
                         <li><strong></strong>--> </li>
                         <li><strong></strong>--> </li>
                         <li><strong></strong>--> </li>
@@ -109,4 +151,19 @@
         </section>
     </main>
 
+</body>
+
+
+<body>
+    <section>
+        <article>
+            <div>
+                <div>
+                    Probamos cositas nuevas
+                </div>
+                <p>Vamos a ver la negrita<strong>TODO PODEROSA</strong>si nos pone el color que queremos.
+                Además metemos un enlace <a href="www.google.com">Llévame allá</a></p>
+            </div>
+        </article>
+    </section>
 </body>
