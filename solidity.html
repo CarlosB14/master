@@ -34,7 +34,7 @@
                     <ul>
                         <li><strong>Licencia</strong>--> //SPDX-License-Identifier: MIT -->    pragma solidity ^0.8.14;</li>
                         <li><strong>Crear contrato</strong>--> contract nombre{ código contrato }</li>
-                        <li><strong>Constructor</strong>--> Inicializar las variables, no siempre es necesario --> constructor () {    }</li>
+                        <li><strong>Constructor</strong>--> Inicializar las variables, lo hacíamos siempre en pseudocódigo, no siempre es necesario, para definir dueño de contrato --> constructor () {    }</li>
                         <li><strong>Herencia</strong>--> Para heredar funciones de otros contratos. --> contract nombre_contrato is nombre_contrato_heredado{     }</li>
                     </ul>
             </details>
@@ -71,10 +71,53 @@
                     <ul>
                         <li><strong>Sintaxis sin retorno</strong>--> function nombre(dataType parametro1, dataType parametro2) modificadores{código}</li>
                         <li><strong>Sintaxis con retorno</strong>--> function nombre(dataType parametro1, dataType parametro2) modificadores returns (dataType return_value) {código}</li>
+                        <details>
+                            <summary><strong>Modificadores funciones</strong>--> Para crear tipo de datos personalizados, se define con nombre y luego propiedades, si no especificamos por defecto son public</summary>
+                                <ul>
+                        <li><strong>public</strong>--> Llamadas desde cualquier sitio</li>
+                        <li><strong>private</strong>--> Llamadas sólo desde el contrato</li>
+                        <li><strong>internal</strong>--> Llamadas desde el contrato y heredados</li>
+                        <li><strong>external</strong>--> Llamadas sólo desde fuera del contrato --> Gastan menos gas!</li>
+                        <li><strong>view</strong>--> No modifica ni accede a los datos</li>
+                        <li><strong>pure</strong>--> Ni modifica ni accede a los datos</li>
+                        <li><strong>payable</strong>--> Permite recibir y enviar ethers</li>
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Variables</strong>--> Modificadores de acceso. Si no ponemos nada por defecto es tipo internal</summary>
+                    <ul>
+                        <li><strong>Public</strong>--> Completamente accesible</li>
+                        <li><strong>Private</strong>--> Sólo accesible desde el contrato</li>
+                        <li><strong>Internal</strong>--> Accesible desde el contrato y heredados</li>
+                        <li><strong>Memory</strong>--> Guardado en memoria temporalmente</li>
+                        <li><strong>Storage</strong>--> Guardado permanentemente en blockchain, les tenemos que asignar un hueco en la memoria que ya existe, no puede cogerlo por si solo, sólo para array mapping y struct </li>
+                        <li><strong>Payable</strong>--> Permite recibir y enviar ethers</li>                        
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Eventos</strong>--> Se usan para enviar información en la blockchain, para informar algo de la cadena a los usuarios</summary>
+                    <ul>
+                        <li><strong>Declaración</strong>--> event nombre_evento(type var1, type var2 etc)</li>
+                        <li><strong>Uso</strong>--> emit nombre_evento (valor1, valor2 etc)</li>
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Funciones avanzadas</strong></summary>
+                    <ul>
+                        <li><strong>Require</strong>--> Establece una función que se tiene que cumplir sí o sí, si no se detiene la función, require(<condición>, "Mensaje si no se cumple");</condici></li>
+                        <li><strong>Modifier</strong>--> Permite cambiar funcionamiento de las funciones, modifier nombre(type var1, etc){require(<condision>); _; Siempre se acaba los modifier con _; se usa con la función para hacerle ciertas modificaciones</condision></li>
+                        <li><strong>Función virtual</strong>--> Cuando hereda un contrato, en la función que se llame virtual del padre, en el hijo podrá reescribirla. Las funciones en la interfaz suelen ser virtual por defecto</li>
+                        <li><strong>Función override</strong>--> Sobreescriben la función base, la del hijo se tendría que declarar override</li>
+                        <li><strong>Función interna en solidity</strong>--> Unchecked, posible desbordamiento, por ej: restar a uint 4 -5 daría negativo y el uint no puede ser negativo.</li>
                         <li><strong></strong>--> </li>
                         <li><strong></strong>--> </li>
                         <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
+                        <li><strong></strong></li>
+                        <li><strong></strong></li>
 </body>
