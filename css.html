@@ -277,6 +277,37 @@
                         <li><strong>Background-clip</strong>--> Para que la imagen respete border-box, ocupa la imagen todo el box, padding-box ocupa la img todo menos borde, content-box no ocupa el padding</li>
                         <li><strong>Background-blend-mode</strong>--> Fusiona imagen y color de fondo, o 2 imágenes etc. Atributos, multiply, lighten, darkten y hay más atributos</li>
                         <h3>IMÁGENES DE CONTENIDO</h3>
+                        <li><strong>Object-fit</strong>--> Atributos, fill rellena la imagen hasta rellenar contenedor, contain se estira lo posible pero manteniendo la imagen equitativa, cover mantiene la imagen con su relación pero cubre todo contenedor posiblemente deje imagen fuera del box</li>
+                        <li><strong>Object-position</strong>--> con px o con % para desplazar imagen y que se vea lo que queremos, muy úlil con object-fit covert, el que hace zoom para cubrir la caja sin deformar la imagen.</li>
+                        <li><strong>Aspect-ratio</strong>--> Para mantener la relación de aspecto, con 16:9 siempre mantendrá esa relación</li>
+                        <li><strong>linear-gradient</strong>--> Para hacer degradados de colores, se puede de cualquier dirección, background-image: linear-gradient(to top right, black, 25%, red, 75%, yellow) o poner sólo colores y lo hace más equitativo/li>
+                        <li><strong>radial-gradiant</strong>--> background-image: radial-gradiant(circle, red, 25%, etc...) tmb se puede repetir background-image: repeating-radial-gradient(etc)</li>
+                        <li><strong>Generador online degradados</strong>--> <a href="https://cssgradient.io">Degradados page pro</a></li>
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Posicionamiento</strong>--> Súper importante</summary>
+                    <ul>
+                        <li><strong>display</strong>--> Para cambiar un elemento de bloque a línea o viceversa, atributo, block, inline e inline-block, elemento de línea pero que se le puede poner width y height, se puede usar none para que no se vea</li>
+                        <li><strong>vertical-align</strong>--> Para posicionar un elemento de línea dentro de un párrafo por ejemplo arriba, abajo o middle, por ejemplo para subíndices o ªº</li>
+                        <li><strong>position</strong>, relativo es igual que normal pero con desplazamiento, absoluto cambias origen del elemento, fijo siempre está en la misma posición, aún haciendo scroll etc, flotante ya no se usa, sticky para cuando haces scroll fijar el menú por ejemplo</li>
+                            <ul>
+                                <li><strong>normal</strong>--> normal</li>
+                                <li><strong>relativo</strong>--> es igual que normal pero con desplazamiento --> position: relative;  left: 100px; si pones -100 es como poner 100 en right</li>
+                                <li><strong>absoluto</strong>--> cambias origen del elemento, SUPER POTENTE, --> su eje de coor, es el primer ancestro que está posicionado de forma no estático, las demás cajas ocupan su lugar al contratio que el relativo </li>
+                                <li><strong>fijo</strong>--> siempre está en la misma posición, aún haciendo scroll etc, toma de referencia la ventana del navegador, y no se mueve aún haciendo scroll</li>
+                                <li><strong>sticky</strong>--> sticky para cuando haces scroll fijar el menú por ejemplo, para que funcione tiene que haber scroll en la etiqueta padre</li>
+                                <li><strong>z-index</strong>--> Para decir qué elemento queremos que esté por encima, con posicionamiento diferente a por defecto, por ejemplo absoluto, relativo fijo...</li>
+                                <li><strong>float</strong>--> Tipo blog para poner al lado del texto una imagen</li>
+                            </ul>
+                        <li><strong>visibility</strong>--> Hace invisible un elemento, pero sigue estando ahí, no lo elimina, como opacity 0, display none sí que es como que lo elimina, resto de cajas no se enteran de este movvimiento</li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
+                        <li><strong></strong>--> </li>
                         <li><strong></strong>--> </li>
                         <li><strong></strong>--> </li>
                         <li><strong></strong>--> </li>
