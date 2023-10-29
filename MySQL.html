@@ -40,10 +40,15 @@
                             <li><strong>USE bbdd</strong>--> Nos situamos en la base de datos</li>
                             <li><strong>SHOW TABLES</strong>--> Muestra las tablas de la base de datos que nos hemos situado</li>
                             <li><strong>SELECT database();</strong>--> Nos devuelve la bbdd que estamos ahora mismo</li>
-                            <li><strong></strong>--> </li>
-                            <li><strong></strong>--> </li>
-                            <li><strong></strong>--> </li>
-                            <li><strong></strong>--> </li>
+                            <li><strong>SELECT COLUMNA/S FROM TABLA;</strong>--> Para seleccionar columna en una tabla y una database ya situados en ella</li>
+                            <li><strong>limit 50</strong>--> Muestra 50 filas, pero procesa todas</li>
+                            <li><strong>Operar con el dato de una columna</strong>--> SELECT Name, Population*2 from city;</li>
+                            <li><strong>Asignamos un alias en la respuesta</strong>--> SELECT Name, Population*2 AS "Double Population" from city;</li>
+                            <li><strong>DISTINCT</strong>--> SELECT DISTINCT CountryCode FROM city; --> Saca todos los cod de país sin repetir</li>
+                            <li><strong>Asegurar bbdd para cambios</strong>--> select... FROM world.city --> Así entramos seguro a la bbdd que podemos modificar</li>
+                            <li><strong>Where</strong>--> SELECT * FROM world.country WHERE Continent="Asia";</li>
+                            <li><strong>Comparador <> </strong>--> WHERE Name > 'za' --> sólo saca los nombres que siguen a za...</li>
+                            <li><strong>WHERE BINARY</strong>--> Tiene que estar escrito exactamente igual</li>
                             <li><strong></strong>--> </li>
                         </ul>
                 </details>

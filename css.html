@@ -299,21 +299,76 @@
                                 <li><strong>absoluto</strong>--> cambias origen del elemento, SUPER POTENTE, --> su eje de coor, es el primer ancestro que está posicionado de forma no estático, las demás cajas ocupan su lugar al contratio que el relativo </li>
                                 <li><strong>fijo</strong>--> siempre está en la misma posición, aún haciendo scroll etc, toma de referencia la ventana del navegador, y no se mueve aún haciendo scroll</li>
                                 <li><strong>sticky</strong>--> sticky para cuando haces scroll fijar el menú por ejemplo, para que funcione tiene que haber scroll en la etiqueta padre</li>
-                                <li><strong>z-index</strong>--> Para decir qué elemento queremos que esté por encima, con posicionamiento diferente a por defecto, por ejemplo absoluto, relativo fijo...</li>
+                                <li><strong>z-index</strong>--> Para decir qué elemento queremos que esté por encima, con posicionamiento diferente a por defecto, por ejemplo absoluto, relativo fijo..., si lo aplicamos tiene que ser sobre mismo tipo de posicionamiento</li>
                                 <li><strong>float</strong>--> Tipo blog para poner al lado del texto una imagen</li>
                             </ul>
                         <li><strong>visibility</strong>--> Hace invisible un elemento, pero sigue estando ahí, no lo elimina, como opacity 0, display none sí que es como que lo elimina, resto de cajas no se enteran de este movvimiento</li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
+                        <li><strong>display flex</strong>--> </li>
+                        <li><strong>flex-direction</strong>--> row-reverse, empieza de der-izq, column, cambiar eje principal, tmb column-reverse de bajo arriba</li>
+                        <li><strong>flex-wrap</strong>--> Evita o permite el desbordamiento del box padre, wrap, continua abajo</li>
+                        <li><strong>gap</strong>--> Para separar los items hijos, como margin, se puede hacer como row-gap o column-gap. ej --> gap: 10px;</li>
+                        <li><strong>justify-content</strong>--> Alinear items, flex-end, center, space-between, space-around, space-evenly --> diferentes formas de alinear los items del contenedor padre </li>
+                        <li><strong>align-items</strong>--> Alinear vertical items, flex-end, center, stretch estira items, baseline alinea los textos de los items</li>
+                        <li><strong>align-content</strong>--> Alinear items en vertical cuando hay desbordamiento, flex-end, center, stretch, space-between y space-around</li>
+                        <li><strong>align-self</strong>--> Se aplica en items, para mover uno solo, los demás no ocupan su lugar</li>
+                        <li><strong>order</strong>--> Se aplica en los items, podemos modificar su orden, si no aplicamos a todos los items los que no tengan order aparecerán antes</li>
+                        <li><strong>flex-basis</strong>--> Se aplica a items, el ancho que le aplicamos a todos los items o sólo a 1 en concreto, como width</li>
+                        <li><strong>flex-grow</strong>--> Se aplica a items, se usa cuando hay flex-basis, flex-grow: 1; se aplica al item que crecerá si lo necesita hasta ocupar el tamaño padre sin usar, si se pone en 2 se distribuye ese espacio</li>
+                        <li><strong>flex-shrink</strong>--> Se aplica a items, opuesta a flex-grow, tiene que estar flex-basis, si el item ocupa menos de lo que tiene con esto se ajusta a su texto para darle espacio al resto de items</li>
+                        <li><strong>Display Grid</strong>--> Estructuras de una sola dimensión, se definen filas y columnas con grid-template-columns o rows en px, % o fr(fraciones más fácil que con porcentaje y darle todo el tamaño del contenedor padre a todo el grill)</li>
+                        <li><strong>repeat</strong>--> cuando definimos las columnas o rows podermos poner, grid-template-columns: 1fr repeat(4fr) 2fr</li>
+                        <li><strong>minmax</strong>--> le podemos asignar un minimo y máximo a los grid-templates entre paréntesis</li>
+                        <li><strong>gap</strong>--> Separación entre celdas y columnas, column-gap y row-gap</li>
+                        <li><strong>order</strong>--> Igual que con flex</li>
+                        <li><strong>area</strong>--> En el contenedor padre declaramos el area grid-template-areas: "head head" "main menu" "foot foot"; y lo asignamos en cada item del grill, grid-area: head o el que sea</li>
+                        <li><strong>auto-fill</strong>--> repeat(auto-fill, minmax(300px, 1fr)) rellenará de min 300px hasta que quepa </li>
+                        <li><strong>auto-fit</strong>--> estira las columnas para ocupar lo máximo y auto-fill dejará en blanco a la derecha si no hay más</li>
+                        <li><strong>alineación</strong>--> justify-items--> horizontal, align-items--> Vertical  justify-content--> contenido horizontal align-content--> Contenido vertical</li>
+                        <li><strong>alineación self</strong>--> justify-self --> horizontal align-self --> vertical</li>
+                        <li><strong>grid-templates</strong>--> filas / columnas</li>
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Estilo en listas</strong></summary>
+                    <ul>
+                        <li><strong>::marker</strong>Seleccionar el marcador de la lista, y podemos estilarlo o poner contador totalmente personalizado con css en las listas no ordenadas</li>
+                        <li><strong>::before</strong>Para añadir texto con content, imágenes etc antes de la selección que hagamos</li>
+                        <li><strong>::after</strong>Igual que before pero para después de la selección</li>
+                        <li><strong>list-style-image</strong>Se pueden añadir imágenes para el marcador, cuidado con el tamñao no se puede modificar, luego ponemos url('urlimagen');</li>
+                        <li><strong></strong></li>
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Elementos de Interactividad</strong></summary>
+                    <ul>
+                        <li><strong>outline</strong>--> Modificar comportamiento del contorno de los elementos, mucho más restrictivo que border, se usa para resaltar algo sin modificar el layaut, -color, -style, -with, -offset--> Desplazamiento del contorno respecto a la caja</li>
+                        <li><strong>cursor</strong>--> Para cambiar el cursor en algún momento específico, no hace falta hacerlo con un hover, no se usa mucho. cursor: ----;</li>
+                        <li><strong>:hover</strong>--> Cuando estamos encima de un elemento sin clickar en él</li>
+                        <li><strong>:active</strong>--> Cuando haces click en un usuario, pero mientras se mantiene el click, en soltarlo ya no se ve</li>
+                        <li><strong>:focus</strong>--> Cuando hacemos click en un sitio hace foto en él</li>
+                        <li><strong>:focus-within</strong>--> Se aplica al padre, y cuando cualquiera de sus hijos tenga el focus pasará lo que pongamos</li>
+                        <li><strong>:visited</strong>--> Enlace visitado</li>
+                        <li><strong>:link</strong>--> Sólo a los enlaces no visitados</li>
+                        <li><strong>scroll-behavior</strong>--> Aplicar desplazamiento suave. Podemos aplicar en un menú con link, y # en el href nos lleva a los dfierentes partes del menú, como un índice. Con scroll-behavior: smooth; te lleva al sitio haciendo un scroll pero bonito hasta llegar</li>
+                    </ul>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Degradados sombras y efectos</strong></summary>
+                    <ul>
+                        <li><strong>text-shadow</strong>--> Podemos poner desplazamiento de texto en eje x e y, y después si queremos tamaño--> desenfoque y color  text-shadow: 4px 4px 5px y color; valores negativos para el eje x e y.</li>
+                        <li><strong>Generador text-shadow</strong>--> <a href="http://html-css-js.com/css/generator/text-shadow/">Generador de sombras</a></li>
+                        <li><strong>box-shadow</strong>--> box-shadow: 5px 5px size size color inset --> el último para que el sombraje sea dentro de la caja y lo otro diferente es que tiene dos size para crecimiento del difuminado</li>
+                        <li><strong>Generador box-shadow</strong>-->  <a href="http://html-css-js.com/css/generator/box-shadow/">Generador de sombras</a></li>
+                        <li><strong>Sombras idénticas</strong>--> drop-shadow --> Para imágenes filter: drop-shadow(dentro igual que en box-shadow);</li>
+                        <li><strong>Filtros CSS</strong>--> filter: grayscale--> escala blanco negro, blur--> Desenfoque, sepia--> Color sepia, saturate--> Grado saturación, opacity--> Grado de transparencia, brightness--> Brillo, contrast--> Contraste, hue-rotate--> Rotación color, invert--> Invertir colores y drop-shadow como vimos antes</li>
+                        <li><strong>Filtros CSS generador online</strong>--> <a href="http://cssgeneratos.org/filter-css-generator.html">Filtros CSS</a></li>
+                        <li><strong>Modos de fusión</strong>--> mix-blend-mode y background-blend-mode él usa mucho multiply para fusionar imágen con fondo, pero hay muchas más opciones</li>
                     </ul>
             </details>
         </section>
