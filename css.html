@@ -376,30 +376,12 @@
             <details>
                 <summary><strong>Responsive web design</strong></summary>
                     <ul>
-                        <li><strong>@media</strong> @media (condicion) {} y con @media not ... es para aplicar ciertos parámetros de responsive si se cumple las condiciones o no se cumplen, condiciones--> width, min-width, height, min-height, aspect-ratio, orientation</li>
-                        <li><strong>@media (range)</strong> @media (width <= 400px) {} @media (400px <= width <= 800px) {}</li>
-                        <li><strong>breakpoints</strong>Iphone 7 , ipad horizontal y vertical, pantalla 1440 para arriba. </li>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                    </ul>
-            </details>
-        </section>
-        <section>
-            <details>
-                <summary><strong>Variables</strong></summary>
-                    <ul>
-                        <li><strong>:root --> padre de todo el html</strong>--> --nombreVariable: atributo;</li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
+                        <li><strong>@media</strong>-->   @media (condicion) {} y con @media not ... es para aplicar ciertos parámetros de responsive si se cumple las condiciones o no se cumplen, condiciones--> width, min-width, height, min-height, aspect-ratio, orientation</li>
+                        <li><strong>@media (range)</strong>-->   @media (width <= 400px) {} @media (400px <= width <= 800px) {}</li>
+                        <li><strong>breakpoints</strong>-->  Iphone 7 , ipad horizontal y vertical, pantalla 1440 para arriba. </li>
+                        <li><strong>Layout Shifter</strong>--> Con flex o grid solucionado.</li>
+                        <li><strong>Mostly Fluid</strong>-->Se aplia conforme se amplía el width  Tmb flex o grid</li>
+                        <li><strong>Column Drop</strong>-->  Cofnorme el width del dispositivo es más grande se van creando columnas nuevas. Tmb grid o flex</li>
                     </ul>
             </details>
         </section>
@@ -412,8 +394,6 @@
                         <li><strong>transform:</strong>--> translateX, translateY, translate, translateZ, translate3d y meter entre paréntesis los px</li>
                         <li><strong>scale</strong>--> scaleX, scaleY, scale</li>
                         <li><strong>rotate</strong>--> rotateX, rotateY, rotateZ, rotate --> se hace en rotate(deg45)</li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
                     </ul>
             </details>
         </section>
@@ -425,29 +405,6 @@
                         <li><strong>@keyframes</strong>--> Para hacer todas las transiciones de un estado A a B EJ: @keyframes change-color{from{background-color:red;} to{background-color:green;}} div:hover{animation: cambiate 2s linear infite o veces}</li>
                         <li><strong>funciones de tiempo</strong>--> Velocidad de animación ver en W3c para ver las diferentes opciones</li>
                         <li><strong>Librerías</strong>--> AOS meter link en head lo tienen en git-hub, animate.css es otra, enlazar hoja estilo en link, y añadimos la clase en la etiqueta de html que queremos poner </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                    </ul>
-            </details>
-        </section>
-        <section>
-            <details>
-                <summary><strong>Proyectos</strong></summary>
-                    <ul>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
                     </ul>
             </details>
         </section>
@@ -455,16 +412,17 @@
             <details>
                 <summary><strong>SASS</strong></summary>
                     <ul>
-                        <li><strong>Preprocesadores</strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
-                        <li><strong></strong>--> </li>
+                        <li><strong>Variables</strong>--> $nombre: atributo;</li>
+                        <li><strong>Símbolo &</strong>--> Hace referencia a la última etiqueta a {} &:hover{} haría referencia al a de antes</li>
+                        <li><strong>Mapping</strong>--> Como diccionarios en python, $colores(primary: red, secondary: blue, aside: white);</li>
+                        <li><strong>Condicional If</strong>--> header { @if $color ==blue {background-color: $color; } else { background-color: red;}}</li>
+                        <li><strong>Funciones</strong>--> p {color: lighten(#000000, 20%); Nos aclara el color un 20%</li>
+                        <li><strong>Mixins</strong>--> @mixin reset-list { margin:0; padding: 0; list-style-type: none;}  header nav ul { @include reset-list()} tmb le podemos poner parámetros de entrada y por defecto, que se pueda modificar $mixin button($bg: red, $color:white) {demás parámetros} y el bg y el color podremos modificarlos cuando llamemos al mixin si queremos</li>
+                        <li><strong>Compilar</strong>--> Terminal vscode Estar en carpeta de scss, sass nombre.scss nombre.css</li>
+                        <li><strong>Compilar con watch</strong>--> sass --watch nombre.scss nombre.css --> Se ejecutan los cambios mientras vamos haciendo</li>
+                        <li><strong>Llamar otros scss</strong>--> Con @import "nombrearchivo"; Para estructurar los archivos scss</li>
+                        <li><strong>Compilación final con compresión</strong>--> sass --style=compressed nombre.scss nombre.css</li>
+                        <li><strong>Estructura 7 en 1</strong>--> Usar esta estructura para sass</li>
                     </ul>
             </details>
         </section>

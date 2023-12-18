@@ -30,5 +30,80 @@
 <body>
     <header><a href="index.html"><h1>Inicio</h1></a></header>
     <main>
-    <section>
-        <ul>
+        <section>
+            <details>
+                <summary><strong>Operadores avanzados</strong></summary>
+                    <ul>
+                        <li><strong>&</strong> -->Si los dos son verdaderos devuelve el segundo, si no son verdaderos devuelve el primero</li>
+                        <li><strong>||</strong> -->Si el primero es verdadero devuelve el primero, si el primero es falso devuelve el segundo</li>
+                        <li><strong>ternario</strong> -->condicion ? expresion1 : expresion2 --> Como condicional, let mensaje = edad >=18 ? 'Mayor de edad' : 'Menor edad';</li>
+                        <li><strong>Nullish coalescing</strong> -->Condicional de si a es null o undefined devuelve b y si no devuelve a --> a ?? b;</li>
+                        <li><strong>Nullish</strong> -->x ??= 50 si x es igual a null o undefined </li>
+                    </ul>
+            </details>
+            <details>
+                <summary><strong>Funciones</strong></summary>
+                    <ul>
+                        <li><strong>Parámetro</strong> --> Si pasamos un objeto o un array y lo modificamos en la función, se modificará el original también, puesto que le pasamos la dirección de memoria donde se guarda en cambio si pasamos un parámetro, no está guardado en ningún lado, por lo que no se modifica.</li>
+                        <li><strong></strong> --></li>
+                        <li><strong></strong> --></li>
+                        <li><strong></strong> --></li>
+                        <li><strong></strong> --></li>
+                        <li><strong></strong> --></li>
+                        <li><strong></strong> --></li>
+                        <li><strong></strong> --></li>
+                        <li><strong></strong> --></li>
+                    </ul>
+            </details>
+            <details>
+                <summary><strong>Setencias de control de flujo</strong></summary>
+                    <ul>
+                        <li><strong>String</strong> --> let variable = ""; ''; ``; Esta última es como la f de python para poder concatenar sin tener que estar abriendo comillas y cerrando para concatenar variables ${variable} dentro de texto</li>
+                        <li><strong>Concatenar</strong> --> Con el + o variable.concat('texto', variable) o con `` como hemos visto antes, para arrays el .join() y entre paréntesis le pasamos lo que queremos que separe los items del array</li>
+                            <details>
+                                <summary><strong>Métodos en string</strong></summary>
+                                    <ul>
+                                        <li><strong>length</strong> --> variable.length --> Cuenta los caracteres de la variable</li>
+                                        <li><strong>includes</strong> --> variable.include('a') --> Nos devuelve booleano si ese caracter está en la variable</li>
+                                        <li><strong>indexOf</strong> --> variable.indexOf('a') --> Nos dice donde está el carácter en la variable, si no está nos devuelve -1</li>
+                                        <li><strong>startWith y endsWith</strong> --> variable.startWith('a') --> Devuelve booleano si empieza por ese carácter la variable</li>
+                                        <li><strong>slice</strong> --> variable.slice(4, -5) --> Nos devuelve desde la primera posición al final, o desde la primera posición hasta la posición que le pasamos del string</li>
+                                        <li><strong>toUpperCase y toLowerCase</strong> --> variable.toUpperCase --> Nos lo devuelve el text en mayúsculas</li>
+                                        <li><strong>replace y replaceAll</strong> --> variable.replace('1letras', 'locambiaspor') --> Nos cambia el primero por el segundo pero en una copia no en el original, sólo cambia el primero o si hay más usamos replaceAll</li>
+                                        <li><strong>repeat</strong> --> variable.repeat(2) --> Nos repite la variable 2 veces</li>
+                                        <li><strong>trim</strong> --> variable.trim() --> Nos quita los espacios al principio y al final</li>
+                                        <li><strong>split</strong> --> variable.split(' ') --> Uso muy común con un espacio, nos separa la cadena de caracteres en un array y cada ítem está creado por la separación de un espacio --> Hola mundo y adiós. Nos generará un array con 4 items [Hola,mundo,y,adiós]</li>
+                                        <li><strong></strong> --></li>
+                                        <li><strong></strong> --></li>
+                                    </ul>
+                            </details>
+                        <li><strong>Number</strong> --> Peculiar lo de Infinity e -Infinity</li>
+                            <details>
+                                <summary><strong>Métodos en number</strong></summary>
+                                    <ul>
+                                        <li><strong>toFixed</strong> --> variable.toFixed() --> Redondea a los decimales que le pongamos</li>
+                                        <li><strong>parseInt</strong> --> parseInt(variable) --> Te devuelve el número entero sin decimales</li>
+                                        <li><strong>parseFloat</strong> --> parseFloat(variable) --> Devuelve el número a decimal</li>
+                                        <li><strong>Math.round</strong> --> Math.round(variable) --> Redondea la variable</li>
+                                        <li><strong>Math.floor</strong> --> Math.floor(variable) --> Redondea a la baja la variable</li>
+                                        <li><strong>Math.ceil</strong> --> Math.cell(variable) --> </li>
+                                        <li><strong>Math.abs</strong> --> Math.abs(variable) --> Redondea absoluto, el negativo lo pasa a positivo</li>
+                                        <li><strong>Math.random</strong> --> Math.round(variable) --> </li>
+                                        <li><strong>Number.MAX_VALUE y Number.MIN_VALUE</strong> --> Nos dice el número máixmo y mínimo para almacenar</li>
+                                    </ul>
+                            </details>
+                            <details>
+                                <summary><strong>Condicionales</strong></summary>
+                                    <ul>
+                                        <li><strong>if</strong> --> if(comparativa) {código para hacer;} else if (condición) {código para hacer;} else {código para hacer;}</li>
+                                        <li><strong>ternario</strong> --> let mensaje = edad >18 ? 'Es mayor de edad' : 'Es menor de edad';  para condicionales de solo dos condiciones se escribe en una línea</li>
+                                        <li><strong>switch</strong> --> firstName = 'Bienve'; switch (firstName.length) {case 6: console.log}; break; case 2: console.log; break; default: console.log;} </li>
+                                        <li><strong>while</strong> --> while(contador<10) {console.log; contador++;}</li>
+                                        <li><strong>do while</strong> --> do {console.log; contador++;} while(contador<10) console.log; contador++; --> Mínimo siempre se va a ejecutar una vez</10></li>
+                                        <li><strong>for</strong> --> for (let i = 0; i<20; i++){console.log;}</li>
+                                    </ul>
+                            </details>
+                    </ul>
+            </details>
+                    
+
